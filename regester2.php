@@ -1,6 +1,6 @@
 <?php
 session_start();
-$dataconnection = mysqli_connect("localhost","root","","subham");
+$dataconnection = mysqli_connect("db.fr-pari1.bengt.wasmernet.com","10272","fc42d62b7f45800045be24109f94","068afc42-d62c-7138-8000-606ab9579cd1","subhamsingh");
 if(!$dataconnection){
     die("404 error".mysqli_connect_error());
 }
@@ -52,7 +52,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 
 
-$conn1 = mysqli_connect("localhost", "root", "", "subham");
+$conn1 = mysqli_connect("db.fr-pari1.bengt.wasmernet.com","10272","fc42d62b7f45800045be24109f94","068afc42-d62c-7138-8000-606ab9579cd1","subhamsingh");
 
 if (!$conn1) {
     die("The database connection failed: " . mysqli_connect_error());
@@ -124,4 +124,5 @@ mysqli_close($conn1);
     
 <script src="index3.js"></script>
 </body>
+
 </html>
