@@ -19,12 +19,13 @@ $str5 = range('a','a');
 
 <?php
 
-$server = "localhost";
-$username = "root";
-$password = "";
-$db = "subham";
+$server = "db.fr-pari1.bengt.wasmernet.com";
+$port = "10272";
+$username = "fc42d62b7f45800045be24109f94";
+$password = "068afc42-d62c-7138-8000-606ab9579cd1";
+$db = "subhamsingh";
 
-$conn = mysqli_connect($server,$username,$password,$db);
+$conn = mysqli_connect($server,$port,$username,$password,$db);
 $sql = "SELECT * FROM data1 ORDER BY id DESC ";
 $res = mysqli_query($conn,$sql);
 
@@ -101,11 +102,13 @@ $res = mysqli_query($conn,$sql);
 
 
 <?php
-$server2 = "localhost";
-$username2 = "root";
-$password2 = "";
-$db2 = "subham";
-$conn2 = mysqli_connect($server2 ,$username2,$password2,$db2);
+$server2 = "db.fr-pari1.bengt.wasmernet.com";
+$port2 = "10272";
+$username2 = "fc42d62b7f45800045be24109f94";
+$password2 = "068afc42-d62c-7138-8000-606ab9579cd1";
+$db2 = "subhamsingh"; 
+
+$conn2 = mysqli_connect($server2 ,$port2,$username2,$password2,$db2);
 $sql2 = "SELECT *FROM data2 ORDER BY id DESC";
 $res2 = mysqli_query($conn2 , $sql2);
 ?>
@@ -126,11 +129,12 @@ $res2 = mysqli_query($conn2 , $sql2);
         </h3>
       </div><?php endwhile;?></div></div></div>
 <?php
-$server3 = "localhost";
-$username3 = "root";
-$password3 = "";
+$server3 = "db.fr-pari1.bengt.wasmernet.com";
+$port3 = "10272";
+$username3 = "fc42d62b7f45800045be24109f94";
+$password3 = "068afc42-d62c-7138-8000-606ab9579cd1";
 $db3 = "subham";
-$conn3 = mysqli_connect($server3 ,$username3,$password3,$db3);
+$conn3 = mysqli_connect($server3 ,$port3,$username3,$password3,$db3);
 $sql3 =  "SELECT *FROM data3 ORDER BY id DESC";
 $res3 =  mysqli_query($conn3, $sql3);
 ?>
@@ -197,11 +201,12 @@ $res3 =  mysqli_query($conn3, $sql3);
 
   <?php
   
-  $server4 = "localhost";
-$username4 = "root";
-$password4 = "";
-$db4 = "subham";
-$conn4 = mysqli_connect($server4 ,$username4,$password4,$db4);
+  $server4 = "db.fr-pari1.bengt.wasmernet.com";
+  $port4 ="10272";
+$username4 = "fc42d62b7f45800045be24109f94";
+$password4 = "068afc42-d62c-7138-8000-606ab9579cd1";
+$db4 = "subhamsingh";
+$conn4 = mysqli_connect($server4 ,$port4,$username4,$password4,$db4);
 $sql4 =  "SELECT *FROM data4 ORDER BY id DESC";
 $res4 = mysqli_query($conn4,$sql4);
 
