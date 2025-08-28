@@ -25,7 +25,7 @@ $username = "fc42d62b7f45800045be24109f94";
 $password = "068afc42-d62c-7138-8000-606ab9579cd1";
 $db = "subhamsingh";
 
-$conn = mysqli_connect($server,$port,$username,$password,$db);
+$conn = mysqli_connect($server,$username,$password,$db,$port);
 $sql = "SELECT * FROM data1 ORDER BY id DESC ";
 $res = mysqli_query($conn,$sql);
 
@@ -108,7 +108,7 @@ $username2 = "fc42d62b7f45800045be24109f94";
 $password2 = "068afc42-d62c-7138-8000-606ab9579cd1";
 $db2 = "subhamsingh"; 
 
-$conn2 = mysqli_connect($server2 ,$port2,$username2,$password2,$db2);
+$conn2 = mysqli_connect($server2 ,$username2,$password2,$db2,$port2);
 $sql2 = "SELECT *FROM data2 ORDER BY id DESC";
 $res2 = mysqli_query($conn2 , $sql2);
 ?>
@@ -134,7 +134,7 @@ $port3 = "10272";
 $username3 = "fc42d62b7f45800045be24109f94";
 $password3 = "068afc42-d62c-7138-8000-606ab9579cd1";
 $db3 = "subham";
-$conn3 = mysqli_connect($server3 ,$port3,$username3,$password3,$db3);
+$conn3 = mysqli_connect($server3 ,$username3,$password3,$db3,$port3);
 $sql3 =  "SELECT *FROM data3 ORDER BY id DESC";
 $res3 =  mysqli_query($conn3, $sql3);
 ?>
@@ -206,7 +206,7 @@ $res3 =  mysqli_query($conn3, $sql3);
 $username4 = "fc42d62b7f45800045be24109f94";
 $password4 = "068afc42-d62c-7138-8000-606ab9579cd1";
 $db4 = "subhamsingh";
-$conn4 = mysqli_connect($server4 ,$port4,$username4,$password4,$db4);
+$conn4 = mysqli_connect($server4 ,$username4,$password4,$db4,$port4);
 $sql4 =  "SELECT *FROM data4 ORDER BY id DESC";
 $res4 = mysqli_query($conn4,$sql4);
 
@@ -378,3 +378,4 @@ track complint  </td>
 
 </body>
 </html>
+
