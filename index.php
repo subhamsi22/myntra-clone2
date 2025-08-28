@@ -133,7 +133,7 @@ $server3 = "db.fr-pari1.bengt.wasmernet.com";
 $port3 = "10272";
 $username3 = "fc42d62b7f45800045be24109f94";
 $password3 = "068afc42-d62c-7138-8000-606ab9579cd1";
-$db3 = "subham";
+$db3 = "subhamsingh";
 $conn3 = mysqli_connect($server3 ,$username3,$password3,$db3,$port3);
 $sql3 =  "SELECT *FROM data3 ORDER BY id DESC";
 $res3 =  mysqli_query($conn3, $sql3);
@@ -378,4 +378,5 @@ track complint  </td>
 
 </body>
 </html>
+
 
