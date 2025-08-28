@@ -11,11 +11,12 @@ if (!isset($_SESSION['is_admin_logged_in']) || $_SESSION['is_admin_logged_in'] !
 
 <?php
 
-$server = "localhost";
-$username = "root";
-$pass = "";
-$db = "subham";
-$connection = mysqli_connect($server,$username,$pass,$db);
+$server = "db.fr-pari1.bengt.wasmernet.com";
+$port = "10272";
+$username = "fc42d62b7f45800045be24109f94";
+$pass = "068afc42-d62c-7138-8000-606ab9579cd1";
+$db = "subhamsingh";
+$connection = mysqli_connect($server,$port,$username,$pass,$db);
 if(!$connection){
     die("this connection is not successful".mysqli_connect_error());
 }
@@ -56,7 +57,7 @@ mysqli_close($connection);
 
 <!-- new php for profile -->
 <?php
-$profileconnection = mysqli_connect("localhost","root","","subham");
+$profileconnection = mysqli_connect("db.fr-pari1.bengt.wasmernet.com","10272","fc42d62b7f45800045be24109f94","068afc42-d62c-7138-8000-606ab9579cd1","subhamsingh");
 if(!$profileconnection){
     die("404 error".mysqli_connect_error());
 }
@@ -82,7 +83,7 @@ mysqli_close($profileconnection);
 <!-- 2 -->
 
 <?php
-$profileconnection2 = mysqli_connect("localhost","root","","subham");
+$profileconnection2 = mysqli_connect("db.fr-pari1.bengt.wasmernet.com","10272","fc42d62b7f45800045be24109f94","068afc42-d62c-7138-8000-606ab9579cd1","subhamsingh");
 $sqlforprifile2 = "SELECT * FROM `data6` ORDER BY id DESC LIMIT 1";
 $resultforprofile = mysqli_query($profileconnection2,$sqlforprifile2);
 $result222 = mysqli_fetch_assoc($resultforprofile);
@@ -176,7 +177,7 @@ $result222 = mysqli_fetch_assoc($resultforprofile);
 
 
 <?php
- $serverconection4 =mysqli_connect("localhost","root","","subham");
+ $serverconection4 =mysqli_connect("db.fr-pari1.bengt.wasmernet.com","10272","fc42d62b7f45800045be24109f94","068afc42-d62c-7138-8000-606ab9579cd1","subhamsingh");
  if(!$serverconection4 ){
     die("404 erroe".mysqli_connect_error());
 
@@ -265,11 +266,12 @@ upload files
 <!-- PHP START -->
 <?php
 
-$server2 = "localhost";
-$username2 = "root";
-$pass2 = "";
-$db2 = "subham";
-$connection2 = mysqli_connect($server2,$username2,$pass2,$db2);
+$server2 = "db.fr-pari1.bengt.wasmernet.com";
+$port2 = "10272";
+$username2 = "fc42d62b7f45800045be24109f94";
+$pass2 = "068afc42-d62c-7138-8000-606ab9579cd1";
+$db2 = "subhamsingh";
+$connection2 = mysqli_connect($server2,$port2,$username2,$pass2,$db2);
 if(!$connection2){
     die("this connection is not successful".mysqli_connect_error());
 }
@@ -310,7 +312,7 @@ if($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['price2'])){
 <div class="slideup2">
 
 <?php
- $serverconection3 =mysqli_connect("localhost","root","","subham");
+ $serverconection3 =mysqli_connect("db.fr-pari1.bengt.wasmernet.com","10272","fc42d62b7f45800045be24109f94","068afc42-d62c-7138-8000-606ab9579cd1","subhamsingh");
  if(!$serverconection3 ){
     die("404 erroe".mysqli_connect_error());
 
@@ -353,11 +355,12 @@ if($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['price2'])){
 
 <!-- php data showing -->
  <?php
-  $ser2 = "localhost";
-   $user2 = "root";
-   $pas2 = "";
-   $dbb2= "subham";
-   $conn2 = mysqli_connect($ser2,$user2,$pas2,$dbb2);
+  $ser2 = "db.fr-pari1.bengt.wasmernet.com";
+  $port2 = "10272";
+   $user2 = "fc42d62b7f45800045be24109f94";
+   $pas2 = "068afc42-d62c-7138-8000-606ab9579cd1";
+   $dbb2= "subhamsingh";
+   $conn2 = mysqli_connect($ser2,$port2,$user2,$pas2,$dbb2);
    $sqli2 =  'SELECT *FROM `data2` ORDER BY id DESC ';
    $res22 = mysqli_query($conn2,$sqli2);
 
@@ -396,11 +399,12 @@ upload files
 
 
 <?php
-$server3 = "localhost";
-$username3 = "root";
-$pass3 = "";
-$db3 = "subham";
-$connection3 = mysqli_connect($server3,$username3,$pass3,$db3);
+$server3 = "db.fr-pari1.bengt.wasmernet.com";
+$port3 = "10272";
+$username3 = "fc42d62b7f45800045be24109f94";
+$pass3 = "068afc42-d62c-7138-8000-606ab9579cd1";
+$db3 = "subhamsingh";
+$connection3 = mysqli_connect($server3,$port3,$username3,$pass3,$db3);
 if(!$connection3){
     die("this connection is not successful".mysqli_connect_error());
 }
@@ -455,7 +459,7 @@ mysqli_close($connection3);
 
 
  <?php
- $serverconection2 =mysqli_connect("localhost","root","","subham");
+ $serverconection2 =mysqli_connect("db.fr-pari1.bengt.wasmernet.com","10272","fc42d62b7f45800045be24109f94","068afc42-d62c-7138-8000-606ab9579cd1","subhamsingh");
  if(!$serverconection2 ){
     die("404 erroe".mysqli_connect_error());
 
@@ -497,11 +501,12 @@ mysqli_close($connection3);
 
 
   <?php
-  $server33 = "localhost";
-  $username33 = "root";
-  $pass33 = "";
-  $db33 = "subham";
-$connection33 = mysqli_connect($server33,$username33,$pass33,$db33);
+  $server33 = "db.fr-pari1.bengt.wasmernet.com";
+  $port33 = "10272";
+  $username33 = "fc42d62b7f45800045be24109f94";
+  $pass33 = "068afc42-d62c-7138-8000-606ab9579cd1";
+  $db33 = "subhamsingh";
+$connection33 = mysqli_connect($server33,$port33,$username33,$pass33,$db33);
 $sqli33 = "SELECT *FROM `data3` ORDER BY id DESC";
 $res33 = mysqli_query($connection33,$sqli33);
 
@@ -555,11 +560,12 @@ upload files
 
 
 <?php 
- $server4 ="localhost";
- $username4 = "root";
- $pass4 = "";
- $db4 = "subham";
- $connection4 = mysqli_connect($server4,$username4,$pass4,$db4);
+ $server4 ="db.fr-pari1.bengt.wasmernet.com";
+ $port4 = "10272";
+ $username4 = "fc42d62b7f45800045be24109f94";
+ $pass4 = "068afc42-d62c-7138-8000-606ab9579cd1";
+ $db4 = "subhamsingh";
+ $connection4 = mysqli_connect($server4,$port4,$username4,$pass4,$db4);
  if(!$connection4){
     die("404 error".mysqli_connect_error());
  }
@@ -611,11 +617,12 @@ else {
 <!-- main slide upload data showing  -->
 <div class="slideup4">
   <?php
-  $server334 = "localhost";
-  $username334 = "root";
-  $pass334 = "";
-  $db334 = "subham";
-$connection334 = mysqli_connect($server334,$username334,$pass334,$db334);
+  $server334 = "db.fr-pari1.bengt.wasmernet.com";
+  $port334 = "10272";
+  $username334 = "fc42d62b7f45800045be24109f94";
+  $pass334 = "068afc42-d62c-7138-8000-606ab9579cd1";
+  $db334 = "subhamsingh";
+$connection334 = mysqli_connect($server334,$port334,$username334,$pass334,$db334);
 $sqli334 = "SELECT *FROM `data4` ORDER BY id DESC";
 $res334 = mysqli_query($connection334,$sqli334);
 
@@ -642,11 +649,12 @@ $res334 = mysqli_query($connection334,$sqli334);
 <!-- php for delete in main slide -->
 
  <?php 
-$serverdel= "localhost";
-$serveruserame = "root";
-$serverpass = "";
-$serverdatabase = "subham";
-$serverconection = mysqli_connect($serverdel,$serveruserame,$serverpass,$serverdatabase);
+$serverdel= "db.fr-pari1.bengt.wasmernet.com";
+$portdel = "10272";
+$serveruserame = "fc42d62b7f45800045be24109f94";
+$serverpass = "068afc42-d62c-7138-8000-606ab9579cd1";
+$serverdatabase = "subhamsingh";
+$serverconection = mysqli_connect($serverdel,$portdel,$serveruserame,$serverpass,$serverdatabase);
 if(!$serverconection){
     die( "404 erroe".mysqli_connect_error());
 }
