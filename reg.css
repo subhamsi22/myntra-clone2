@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: #dfade62e;
+
+}
+#vi{
+    width: 100%;
+    object-fit: fill;
+    position: fixed;
+    z-index: -1;
+}
+#main h1{
+   color: #fff;
+    font-size: 27px;
+    margin: 5px 496px;
+    text-transform: capitalize;
+
+}
+fieldset{
+    width: 346px;
+    height: 588px;
+    position: relative;
+    left: 36%;
+    background: #000000a3;
+    margin: 46px 0px;
+    border-radius: 30px;                                                                         
+}
+fieldset h1{
+    color: #9b00ac;
+    margin: 20px 137px;
+    text-transform: capitalize;
+
+}
+label{
+    color: #ffffff;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin: 20px 36px;
+}
+input[type="text"],
+input[type = "number"],
+input[type="password"]{
+    
+    
+width: 379px;
+    height: 31px;
+    border-radius: 28px;
+    border: transparent;
+}
+input[type="submit"]{
+    margin: 20px 30px;
+    width: 145px;
+    height: 30px;
+    /* pointer-events: none; */
+    border-radius: 20px;
+    border: transparent;
+    text-transform: capitalize;
+}
+#log{
+    width: 145px;
+    height: 30px;
+    /* pointer-events: none; */
+    border-radius: 20px;
+    border: transparent;
+    text-transform: capitalize;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.pp{
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+#hh{
+    font-size: 30px;
+    color: #ff4f6e;
+}

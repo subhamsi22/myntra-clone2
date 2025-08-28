@@ -1,0 +1,42 @@
+<?php
+
+// $server = "localhost";
+// $username = "root";
+// $pass = "";
+// $db = "subham";
+// $connection = mysqli_connect($server,$username,$pass,$db);
+// if(!$connection){
+//     die("this connection is not successful".mysqli_connect_error());
+// }
+
+
+// if($_SERVER['REQUEST_METHOD']==="POST"){
+//     $name = $_POST['detls'] ?? '';
+//     $price = $_POST['price']?? '';
+//     $dis = $_POST['dis']?? '';
+//     $image = $_FILES['files']['name']?? '';
+//             $tmp_image = $_FILES['files']['tmp_name']?? '';
+
+//     $target =  "upload/" . basename( $image );
+// $imagepath = $target;
+//     if(move_uploaded_file($tmp_image,$target)){
+//         echo "the file has been uploaded";
+// $sql = "INSERT INTO `data1` (name, price, details, image) VALUES ('$name', '$price', '$dis', '$imagepath')";
+// if(mysqli_query($connection,$sql)){
+//     echo "the data has been sent";
+
+// }
+// else{
+//     echo "404 error";
+
+// }
+//     }
+//     else{
+//         echo "sorry the file is not uploaded";
+//     }
+//     mysqli_close($connection);
+
+// }
+
+
+?> 
