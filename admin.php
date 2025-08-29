@@ -9,7 +9,7 @@ if (!isset($_SESSION['is_admin_logged_in']) || $_SESSION['is_admin_logged_in'] !
 }
 
 
-<?php
+
 
 $server = "db.fr-pari1.bengt.wasmernet.com";
 $port = "10272";
@@ -854,4 +854,5 @@ $final_total = $fisrt_data + $second_data + $third_data + $fourt_data;
 
 </body>
 </html>
+
 
