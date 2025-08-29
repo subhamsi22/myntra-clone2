@@ -7,7 +7,7 @@ if (!isset($_SESSION['is_admin_logged_in']) || $_SESSION['is_admin_logged_in'] !
     header("Location: regester2.php");
     exit();
 }
-?>
+
 
 <?php
 
@@ -854,3 +854,4 @@ $final_total = $fisrt_data + $second_data + $third_data + $fourt_data;
 
 </body>
 </html>
+
