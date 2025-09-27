@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Shoping for Womans and Mens </title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="style.css">
   </head>
 <body>
 <?php
@@ -19,13 +18,12 @@ $str5 = range('a','a');
 
 <?php
 
-$server = "db.fr-pari1.bengt.wasmernet.com";
-$port = "10272";
-$username = "fc42d62b7f45800045be24109f94";
-$password = "068afc42-d62c-7138-8000-606ab9579cd1";
-$db = "subhamsingh";
+$server = "localhost";
+$username = "root";
+$password = "";
+$db = "subham";
 
-$conn = mysqli_connect($server,$username,$password,$db,$port);
+$conn = mysqli_connect($server,$username,$password,$db);
 $sql = "SELECT * FROM data1 ORDER BY id DESC ";
 $res = mysqli_query($conn,$sql);
 
@@ -102,13 +100,11 @@ $res = mysqli_query($conn,$sql);
 
 
 <?php
-$server2 = "db.fr-pari1.bengt.wasmernet.com";
-$port2 = "10272";
-$username2 = "fc42d62b7f45800045be24109f94";
-$password2 = "068afc42-d62c-7138-8000-606ab9579cd1";
-$db2 = "subhamsingh"; 
-
-$conn2 = mysqli_connect($server2 ,$username2,$password2,$db2,$port2);
+$server2 = "localhost";
+$username2 = "root";
+$password2 = "";
+$db2 = "subham";
+$conn2 = mysqli_connect($server2 ,$username2,$password2,$db2);
 $sql2 = "SELECT *FROM data2 ORDER BY id DESC";
 $res2 = mysqli_query($conn2 , $sql2);
 ?>
@@ -120,21 +116,23 @@ $res2 = mysqli_query($conn2 , $sql2);
       <div class="slide2">
         <?php while($row2 = mysqli_fetch_assoc($res2)):?>
 
-        <div class="box2">
+       <a  href="<?php echo $row2['link']; ?>">
+         <div class="box2">
           <img id="imagech2"src=<?php echo $row2['image'] ?> alt="">
 <h3 id="prod"><?php echo $row2['productname']; ?><br></h3>
 
  <h3 id="pricee">₹<?php echo $row2['price']; ?><br></h3>
  <h3 id="diss"> <?php echo $row2['discription']; ?>
         </h3>
-      </div><?php endwhile;?></div></div></div>
+
+      </div>
+      </a><?php endwhile;?></div></div></div>
 <?php
-$server3 = "db.fr-pari1.bengt.wasmernet.com";
-$port3 = "10272";
-$username3 = "fc42d62b7f45800045be24109f94";
-$password3 = "068afc42-d62c-7138-8000-606ab9579cd1";
-$db3 = "subhamsingh";
-$conn3 = mysqli_connect($server3 ,$username3,$password3,$db3,$port3);
+$server3 = "localhost";
+$username3 = "root";
+$password3 = "";
+$db3 = "subham";
+$conn3 = mysqli_connect($server3 ,$username3,$password3,$db3);
 $sql3 =  "SELECT *FROM data3 ORDER BY id DESC";
 $res3 =  mysqli_query($conn3, $sql3);
 ?>
@@ -170,6 +168,7 @@ $res3 =  mysqli_query($conn3, $sql3);
     <div class="frame3">
       <div class="slide3">
         <?php while($row3 = mysqli_fetch_assoc($res3)): ?>
+          <a href="<?php echo $row3['link']; ?>">
 <div class="box3">
  
 <img class="imgg" src=<?php  echo $row3['image']; ?> alt="">
@@ -180,7 +179,7 @@ $res3 =  mysqli_query($conn3, $sql3);
 <h2 class="prc"> ₹<?php echo $row3['number_price']; ?></h2>
 
 </div>
-
+</a>
 
         </div>
         <?php  endwhile; ?>
@@ -201,12 +200,11 @@ $res3 =  mysqli_query($conn3, $sql3);
 
   <?php
   
-  $server4 = "db.fr-pari1.bengt.wasmernet.com";
-  $port4 ="10272";
-$username4 = "fc42d62b7f45800045be24109f94";
-$password4 = "068afc42-d62c-7138-8000-606ab9579cd1";
-$db4 = "subhamsingh";
-$conn4 = mysqli_connect($server4 ,$username4,$password4,$db4,$port4);
+  $server4 = "localhost";
+$username4 = "root";
+$password4 = "";
+$db4 = "subham";
+$conn4 = mysqli_connect($server4 ,$username4,$password4,$db4);
 $sql4 =  "SELECT *FROM data4 ORDER BY id DESC";
 $res4 = mysqli_query($conn4,$sql4);
 
@@ -372,11 +370,10 @@ track complint  </td>
   var phpdata5 = <?php echo json_encode($str5);?>;
 
 </script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="index.js"></script>
 
 </body>
 </html>
-
-

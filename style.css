@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 #main{
      /* display: none; */
@@ -516,4 +517,70 @@ tr{
 text-align: center;
     background: #000;
 
+}
+#my_image{
+    width: 34%;
+    
+    margin: 39px 0px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px 7px #5a25c1;
+}
+.detials_for_product{
+    display: inline-flex
+;
+    top: 26%;
+    width: 73%;
+    position: absolute;
+    color: #494646;
+    left: 41%;
+}
+.detials_for_product #pp{
+  position: absolute;
+    font-size: 20px;
+    font-family: cursive;
+    top: 40px;
+
+}
+.detials_for_product #newproduct1 {
+ position: absolute;
+    font-size: 25px;
+    top: 29%;
+}
+.detials_for_product #newproduct2 {
+  position: relative;
+    margin: 118px;
+    font-size: 25px;
+    left: -27%;
+    color: green;
+}
+.boxofpro{
+width: 100%;
+    position: absolute;
+    top: 61%;
+    font-size: 19px;
+    display: grid
+;
+    gap: 22px;
+    text-transform: capitalize;
+}
+#btn1{
+    width: 39%;
+    height: 256%;
+    border: transparent;
+    border-radius: 30px;
+    background: #ff3d00;
+    text-transform: capitalize;
+    box-shadow: inset 4px -3px 3px 0px;
+}
+#btn2{
+        width: 39%;
+    height: 256%;
+    border: transparent;
+    border-radius: 30px;
+    background: #ff3d00;
+    text-transform: capitalize;
+    box-shadow: inset 4px -3px 3px 0px;
+    position: relative;
+    bottom: 246%;
+    left: 40%;
 }

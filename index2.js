@@ -138,6 +138,9 @@ function mydate(){
     datefo.textContent = dateqq.toLocaleDateString('en-US', options3);
 }
 mydate();
+
+
+
 var datah1 = document.getElementById("datah1").innerText;
 
 var graph1 = document.querySelector(".graph1");

@@ -150,12 +150,15 @@ setInterval(goNext, 3000);
 // 2nd animation 
  var slide2 =  document.querySelector(".slide2");
  var boxes2 =  document.querySelectorAll(".box2");
+ var frame2 =  document.querySelector(".frame2");
  let a2 =  0;
+ let interval2 = null;
+
  function newslide2(){
     const b2  = -a2*60;
     slide2.style.transform = `translatex(${b2}px)`;
  }
- function goNext2(){
+    function goNext2(){
     if(a2<boxes2.length-1){
         a2++;
 
@@ -165,11 +168,18 @@ setInterval(goNext, 3000);
 
     }
     newslide2();
- }
-setInterval(goNext2, 2000);
+ } 
+ 
 
+frame2.addEventListener("mouseout",()=>{
+    interval2 = setInterval(goNext2,2000);
+});
+frame2.addEventListener("mouseover",()=>{
+    clearInterval(interval2);
+    interval2 = null;
+});
 
-// slide nav bar 
+// slide nav bar
 
 
  // 3rd slide

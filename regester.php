@@ -14,7 +14,7 @@
 
 <!-- php form data 1 -->
  <?php
- $conn =  mysqli_connect("db.fr-pari1.bengt.wasmernet.com","fc42d62b7f45800045be24109f94","068afc42-d62c-7138-8000-606ab9579cd1","subhamsingh","10272");
+ $conn =  mysqli_connect("localhost","root","","subham");
  if(!$conn){
 die("the data is not connected".mysqli_connect_error());
  }
@@ -112,6 +112,4 @@ s
 
     <script src="index3.js"></script>
 </body>
-
 </html>
-
